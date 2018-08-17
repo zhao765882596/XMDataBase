@@ -1,0 +1,27 @@
+{
+  "name": "XMDataBase",
+  "version": "0.1.0",
+  "summary": "A short description of XMDataBase.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhao765882596/XMDataBase",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhao765882596": "zhaoxiaoming@daojia-inc.com"
+  },
+  "source": {
+    "git": "https://github.com/zhao765882596/XMDataBase.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XMDataBase/Classes/**/*",
+  "dependencies": {
+    "FMDB": [
+      "~> 2.7.2"
+    ]
+  }
+}

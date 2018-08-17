@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XMDataBase_Example' do
+  pod 'XMDataBase', :path => '../'
+
+  target 'XMDataBase_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
