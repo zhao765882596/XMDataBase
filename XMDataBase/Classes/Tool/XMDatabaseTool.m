@@ -13,7 +13,7 @@
     if (property == nil || ![property isKindOfClass:[NSString class]] || property.length < 1) {
         return @"";
     }
-    return [@"sy_" stringByAppendingString:property];
+    return [@"xm_" stringByAppendingString:property];
 }
 + (NSString *)antiCollisionOmitStr:(NSString *)property {
     if (property == nil || ![property isKindOfClass:[NSString class]] || property.length < 4) {

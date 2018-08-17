@@ -354,7 +354,7 @@ NSString * const DBFOLDER = @"xm_dbFolder";
         if ([db tableExists:tableName]) {
             NSString * primaryKey = [XMDatabaseTool antiCollisionJointStr:[XMDatabaseTool primaryKeyWithClass:modelClass]];
             if (!primaryKey || primaryKey.length == 0) {
-                primaryKey = @"id";
+                primaryKey = @"xm_id";
             }
             count = [db intForQuery:[NSString stringWithFormat:@"SELECT COUNT(%@) FROM %@ ;", primaryKey, tableName]];
             
@@ -671,7 +671,7 @@ NSString * const DBFOLDER = @"xm_dbFolder";
     sqliteString = [sqliteString stringByAppendingString:@")"];
     NSString *sql = nil;
     if (primaryKey == nil || [primaryKey  isEqual: @""]) {
-        sql = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS %@ (sy_id INTEGER PRIMARY KEY AUTOINCREMENT", tableName];
+        sql = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS %@ (xm_id INTEGER PRIMARY KEY AUTOINCREMENT", tableName];
     } else {
         sql = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS %@ (%@ %@ PRIMARY KEY", tableName, [XMDatabaseTool antiCollisionJointStr:primaryKey], primaryKeyType ? primaryKeyType : @"TEXT"];
     }

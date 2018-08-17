@@ -1,8 +1,8 @@
 //
-//  XMViewController.h
-//  XMDataBase
+//  SYViewController.h
+//  SYDataBase
 //
-//  Created by zhao765882596 on 08/17/2018.
+//  Created by zhao765882596 on 08/07/2018.
 //  Copyright (c) 2018 zhao765882596. All rights reserved.
 //
 
